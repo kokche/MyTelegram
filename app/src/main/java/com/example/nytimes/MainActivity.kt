@@ -7,6 +7,8 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import com.example.nytimes.databinding.ActivityMainBinding
+import com.example.nytimes.ui.ChatFragment
+import com.example.nytimes.ui.SettingsFragment
 import com.mikepenz.materialdrawer.AccountHeader
 import com.mikepenz.materialdrawer.AccountHeaderBuilder
 import com.mikepenz.materialdrawer.Drawer
@@ -37,6 +39,8 @@ class MainActivity : AppCompatActivity() {
 
     private fun initFunck() {
         setSupportActionBar(mToolbar);
+        supportFragmentManager.beginTransaction()
+            .replace(R.id.dataContainer, ChatFragment()).commit()
         createHeader()
         createDrawer()
     }
@@ -110,6 +114,9 @@ class MainActivity : AppCompatActivity() {
                     position: Int,
                     drawerItem: IDrawerItem<*>
                 ): Boolean {
+                    when(position){
+                        7 -> supportFragmentManager.beginTransaction().addToBackStack(null).replace(R.id.dataContainer,SettingsFragment()).commit()
+                    }
                     Toast.makeText(applicationContext, position.toString(),Toast.LENGTH_SHORT).show()
                     return false
                 }
@@ -123,8 +130,8 @@ class MainActivity : AppCompatActivity() {
             .withHeaderBackground(R.drawable.header)
             .addProfiles(
                 ProfileDrawerItem()
-                    .withName("")
-                    .withEmail("")
+                    .withName("Nikita")
+                    .withEmail("+88002231")
             ).build()
     }
 
