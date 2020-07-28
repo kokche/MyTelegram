@@ -21,5 +21,6 @@
     <color name="material_drawer_selected_text">#2196F3</color>
     <color name="material_drawer_header_selection_text">@color/colorAccent</color>
     <color name="material_drawer_header_selection_subtext">@color/colorAccentDark</color>
+    <color name="colorGrey">#6A6767</color>
 
 </resources>
