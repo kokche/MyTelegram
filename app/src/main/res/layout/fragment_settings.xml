@@ -33,7 +33,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/horizontal_margin"
             android:text="@string/settings_default_username"
-            android:textSize="@dimen/large_text"
+            android:textSize="@dimen/normal_text"
             app:layout_constraintStart_toEndOf="@id/settings_profile_image"
             app:layout_constraintTop_toTopOf="@id/settings_profile_image" />
 
@@ -43,7 +43,7 @@
             android:layout_marginStart="@dimen/horizontal_margin"
             android:text="@string/settings_default_status"
             android:textColor="@color/colorAccentDark"
-            android:textSize="@dimen/normal_text"
+            android:textSize="@dimen/small_text"
             app:layout_constraintStart_toEndOf="@id/settings_profile_image"
             app:layout_constraintTop_toBottomOf="@id/settings_username" />
 
@@ -57,7 +57,7 @@
         android:layout_marginTop="@dimen/vertical_large_margin"
         android:text="@string/settings_label_text_account"
         android:textColor="@color/colorPrimary"
-        android:textSize="@dimen/normal_text"
+        android:textSize="@dimen/small_text"
         android:textStyle="bold"
         app:layout_constraintTop_toBottomOf="@id/settings_header_block" />
 
