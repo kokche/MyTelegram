@@ -24,4 +24,6 @@
     <string name="settings_label_phone_number">Нажмите чтобы изменить номер телефона</string>
     <string name="settings_def_login">kokche</string>
     <string name="settings_label_default_bio">О себе</string>
+    <string name="settings_menu_exit">Выход</string>
+    <string name="settings_menu_change_name">Изменить имя</string>
 </resources>
