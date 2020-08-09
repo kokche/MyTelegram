@@ -10,9 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppThemeLight">
         <activity
-            android:name="com.example.mytelegram.Activity.RegisterActivity"
+            android:name="com.example.mytelegram.activity.RegisterActivity"
             android:windowSoftInputMode="stateVisible|adjustResize" />
-        <activity android:name="com.example.mytelegram.Activity.MainActivity">
+        <activity android:name="com.example.mytelegram.activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -1,4 +1,4 @@
-package com.example.mytelegram.Activity
+package com.example.mytelegram.activity
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
