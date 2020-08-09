@@ -32,4 +32,16 @@
     <string name="register_hint_default_code">- - - - - -</string>
     <string name="register_title_your_phone">Ваш телефон</string>
     <string name="register_toast_enter_on">Введите номер телефона</string>
+    <string name="app_drawer_items_name_create_group">Создать группу</string>
+    <string name="app_drawer_items_name_create_secret_chat">Создать секретный чат</string>
+    <string name="app_drawer_items_name_create_channel">Создать канал</string>
+    <string name="app_drawer_items_name_contacts">Контакты</string>
+    <string name="app_drawer_items_name_phone">Звонки</string>
+    <string name="app_drawer_items_name_favorites">Избранное</string>
+    <string name="app_drawer_items_name_settings">Настройки</string>
+    <string name="app_drawer_items_name_invate_friends">Приглосить друзей</string>
+    <string name="app_drawer_items_name_help">Вопросы о Телеграм</string>
+    <string name="app_drawer_header_def_name">Nikita</string>
+    <string name="app_drawer_header_def_number">+88002231</string>
+    <string name="settings_label_default_user_name">Имя пользователя</string>
 </resources>

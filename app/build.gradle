@@ -7,7 +7,7 @@ android {
     buildToolsVersion "29.0.3"
     viewBinding.enabled = true
     defaultConfig {
-        applicationId "com.example.nytimes"
+        applicationId "com.example.mytelegram"
         minSdkVersion 23
         targetSdkVersion 29
         versionCode 1

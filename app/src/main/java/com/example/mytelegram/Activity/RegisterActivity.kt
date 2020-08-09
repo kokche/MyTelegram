@@ -1,11 +1,12 @@
-package com.example.nytimes.ui
+package com.example.mytelegram.Activity
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
-import com.example.nytimes.R
-import com.example.nytimes.databinding.ActivityRegisterBinding
-import com.example.nytimes.ui.fragments.EnterPhoneFragment
+import com.example.mytelegram.R
+import com.example.mytelegram.databinding.ActivityRegisterBinding
+import com.example.mytelegram.ui.fragments.EnterPhoneFragment
+import com.example.mytelegram.utils.replaceFragment
 
 
 class RegisterActivity : AppCompatActivity() {
@@ -23,8 +24,7 @@ class RegisterActivity : AppCompatActivity() {
         mToolbar = mBinding.registerToolbar
         setSupportActionBar(mToolbar)
         title = getString(R.string.register_title_your_phone)
-        supportFragmentManager.beginTransaction()
-            .add(R.id.registerDataContainer,EnterPhoneFragment())
-            .commit()
+        replaceFragment(EnterPhoneFragment())
+
     }
 }

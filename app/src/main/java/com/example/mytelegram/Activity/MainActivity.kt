@@ -1,13 +1,13 @@
-package com.example.nytimes.ui
+package com.example.mytelegram.Activity
 
-import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
-import com.example.nytimes.R
-import com.example.nytimes.databinding.ActivityMainBinding
-import com.example.nytimes.ui.`object`.AppDrawer
-import com.example.nytimes.ui.fragments.ChatFragment
+import com.example.mytelegram.databinding.ActivityMainBinding
+import com.example.mytelegram.ui.`object`.AppDrawer
+import com.example.mytelegram.ui.fragments.ChatFragment
+import com.example.mytelegram.utils.replaceActivity
+import com.example.mytelegram.utils.replaceFragment
 
 class MainActivity : AppCompatActivity() {
 
@@ -28,17 +28,12 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun initFunc() {
-        if (false) {
-            setSupportActionBar(mToolbar);
+        if (true) {
+            setSupportActionBar(mToolbar)
             mAppDrawer.create()
-            supportFragmentManager.beginTransaction()
-                .replace(
-                    R.id.dataContainer,
-                    ChatFragment()
-                ).commit()
-        }else {
-            val intent = Intent(this,RegisterActivity::class.java)
-            startActivity(intent)
+            replaceFragment(ChatFragment())
+        } else {
+            replaceActivity(RegisterActivity())
         }
 
     }

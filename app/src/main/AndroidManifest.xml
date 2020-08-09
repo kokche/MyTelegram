@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.nytimes">
+    package="com.example.mytelegram">
 
     <application
         android:allowBackup="true"
@@ -10,9 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppThemeLight">
         <activity
-            android:name=".ui.RegisterActivity"
+            android:name="com.example.mytelegram.Activity.RegisterActivity"
             android:windowSoftInputMode="stateVisible|adjustResize" />
-        <activity android:name=".ui.MainActivity">
+        <activity android:name="com.example.mytelegram.Activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
