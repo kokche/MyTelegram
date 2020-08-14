@@ -6,8 +6,10 @@ import androidx.appcompat.widget.Toolbar
 import com.example.mytelegram.databinding.ActivityMainBinding
 import com.example.mytelegram.ui.`object`.AppDrawer
 import com.example.mytelegram.ui.fragments.ChatFragment
+import com.example.mytelegram.utils.AUTH
 import com.example.mytelegram.utils.replaceActivity
 import com.example.mytelegram.utils.replaceFragment
+import com.google.firebase.auth.FirebaseAuth
 
 class MainActivity : AppCompatActivity() {
 
@@ -28,7 +30,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun initFunc() {
-        if (true) {
+        if (AUTH.currentUser != null) {
             setSupportActionBar(mToolbar)
             mAppDrawer.create()
             replaceFragment(ChatFragment())
@@ -41,6 +43,7 @@ class MainActivity : AppCompatActivity() {
     private fun initFields() {
         mToolbar = mBinding.mainToolbar
         mAppDrawer = AppDrawer(this, mToolbar)
+        AUTH = FirebaseAuth.getInstance()
 
     }
 }
