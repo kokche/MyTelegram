@@ -7,6 +7,7 @@
     tools:context=".ui.fragments.EnterPhoneFragment">
 
     <EditText
+        android:hint="@string/register_hint_default_code"
         android:id="@+id/register_input_phone_number"
         style="@style/editText"
         app:layout_constraintEnd_toEndOf="parent"

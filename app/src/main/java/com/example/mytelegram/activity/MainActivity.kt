@@ -7,9 +7,9 @@ import com.example.mytelegram.databinding.ActivityMainBinding
 import com.example.mytelegram.ui.`object`.AppDrawer
 import com.example.mytelegram.ui.fragments.ChatFragment
 import com.example.mytelegram.utils.AUTH
+import com.example.mytelegram.utils.initFirebase
 import com.example.mytelegram.utils.replaceActivity
 import com.example.mytelegram.utils.replaceFragment
-import com.google.firebase.auth.FirebaseAuth
 
 class MainActivity : AppCompatActivity() {
 
@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity() {
         if (AUTH.currentUser != null) {
             setSupportActionBar(mToolbar)
             mAppDrawer.create()
-            replaceFragment(ChatFragment())
+            replaceFragment(ChatFragment(), false)
         } else {
             replaceActivity(RegisterActivity())
         }
@@ -43,7 +43,6 @@ class MainActivity : AppCompatActivity() {
     private fun initFields() {
         mToolbar = mBinding.mainToolbar
         mAppDrawer = AppDrawer(this, mToolbar)
-        AUTH = FirebaseAuth.getInstance()
-
+        initFirebase()
     }
 }
